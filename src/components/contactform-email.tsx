@@ -114,7 +114,7 @@ export function EmailTemplate({ name, email, message, reasons }: EmailTemplatePr
               color: '#495057',
               verticalAlign: 'top'
             }}>
-              Kontaktårsaker:
+              Kontaktårsak(er):
             </td>
             <td style={{ padding: '8px 0', color: '#212529' }}>
               <div>
@@ -213,7 +213,7 @@ export function EmailTemplate({ name, email, message, reasons }: EmailTemplatePr
             color: '#424242',
             fontSize: '14px'
           }}>
-            <strong>Forventet responstid:</strong> Vi svarer normalt innen 24 timer på hverdager.
+            <strong>Forventet responstid:</strong> Vi svarer normalt innen 1-3 dager på hverdager.
           </p>
         </div>
       </div>

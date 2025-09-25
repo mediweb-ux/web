@@ -103,7 +103,7 @@ export async function submitContactForm(formData: FormData): Promise<ActionResul
       
       return {
         success: false,
-        message: "Tjenesten er midlertidig utilgjengelig. Vennligst prøv igjen senere eller kontakt oss direkte.",
+        message: "Tjenesten er midlertidig utilgjengelig. Vennligst prøv igjen senere!",
       }
     }
 
@@ -140,7 +140,7 @@ export async function submitContactForm(formData: FormData): Promise<ActionResul
     if (!validationResult.success) {
       const fieldErrors = processValidationErrors(validationResult.error)
 
-      logFormEvent('warn', 'Form validation failed', {
+      logFormEvent('warn', 'Skjemavalidering feilet', {
         submissionId,
         errorCount: validationResult.error.issues.length,
         fields: Object.keys(fieldErrors),
@@ -209,7 +209,7 @@ export async function submitContactForm(formData: FormData): Promise<ActionResul
             submissionId,
             configurationIssue: true,
           })
-          userMessage = "Det oppstod en teknisk feil. Vennligst kontakt oss direkte på telefon eller prøv igjen senere."
+          userMessage = "Det oppstod en teknisk feil. Vennligst prøv igjen senere."
         }
 
         return {

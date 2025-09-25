@@ -57,7 +57,7 @@ function logEmailEvent(level: 'info' | 'warn' | 'error', message: string, data: 
 export async function sendUserConfirmation(data: ContactFormData): Promise<void> {
   const emailId = `user_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`
   
-  logEmailEvent('info', 'Attempting to send user confirmation email', {
+  logEmailEvent('info', 'Forsøker å sende bekreftelsesepost til brukeren', {
     emailId,
     recipientEmail: data.email,
     senderEmail: EMAIL_CONFIG.from,
@@ -66,11 +66,11 @@ export async function sendUserConfirmation(data: ContactFormData): Promise<void>
   try {
     // Validate email configuration before sending
     if (!process.env.RESEND_API_KEY) {
-      throw new Error('RESEND_API_KEY environment variable is not configured')
+      throw new Error('RESEND_API_KEY environment variable er ikke konfigurert')
     }
 
     if (!process.env.RESEND_FROM_EMAIL) {
-      throw new Error('RESEND_FROM_EMAIL environment variable is not configured')
+      throw new Error('RESEND_FROM_EMAIL environment variable er ikke konfigurert')
     }
 
     const { data: emailData, error } = await resend.emails.send({
@@ -86,24 +86,24 @@ export async function sendUserConfirmation(data: ContactFormData): Promise<void>
     });
 
     if (error) {
-      logEmailEvent('error', 'Resend API returned error for user confirmation', {
+      logEmailEvent('error', 'Resend API returnerte en feil for brukerkoknfigurasjon', {
         emailId,
         error: error,
         recipientEmail: data.email,
       })
-      throw new Error(`Failed to send user confirmation email: ${JSON.stringify(error)}`);
+      throw new Error(`Kunne ikke sende bekreftelsesepost til brukeren: ${JSON.stringify(error)}`);
     }
 
-    logEmailEvent('info', 'User confirmation email sent successfully', {
+    logEmailEvent('info', 'Bekreftelsesepost sendt til bruker', {
       emailId,
       resendId: emailData?.id,
       recipientEmail: data.email,
     })
 
   } catch (error) {
-    logEmailEvent('error', 'User confirmation email failed', {
+    logEmailEvent('error', 'Bekreftelsesepost feilet', {
       emailId,
-      error: error instanceof Error ? error.message : 'Unknown error',
+      error: error instanceof Error ? error.message : 'Ukjent feil',
       stack: error instanceof Error ? error.stack : undefined,
       recipientEmail: data.email,
       errorType: error instanceof Error ? error.constructor.name : typeof error,

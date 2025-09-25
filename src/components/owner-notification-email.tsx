@@ -180,7 +180,7 @@ export function OwnerNotificationEmail({ name, email, message, reasons }: OwnerN
           🚀 Neste steg
         </h3>
         <p style={{ margin: '0 0 15px 0', fontSize: '14px', color: '#424242' }}>
-          Klikk på e-postadressen over for å svare direkte, eller kopier informasjonen til ditt CRM-system.
+          Klikk på e-postadressen ovenfor for å svare direkte, eller kopier informasjonen til ditt CRM-system.
         </p>
         <div style={{ 
           padding: '10px', 
@@ -189,7 +189,7 @@ export function OwnerNotificationEmail({ name, email, message, reasons }: OwnerN
           fontSize: '12px',
           color: '#666'
         }}>
-          <strong>Tips:</strong> Svar innen 24 timer for best kundeopplevelse
+          <strong>Tips:</strong> Svar innen 24 timer for best kundeopplevelse!
         </div>
       </div>
 
