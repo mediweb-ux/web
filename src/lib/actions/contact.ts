@@ -13,12 +13,25 @@ export interface ActionResult {
   errors?: Record<string, string[]>
 }
 
+// Type for log data - allow any serializable value
+type LogData = Record<string, unknown>
+
+// Type for log entry with optional serverSide property
+interface LogEntry extends LogData {
+  timestamp: string
+  level: 'info' | 'warn' | 'error'
+  message: string
+  service: string
+  environment: string
+  serverSide?: boolean
+}
+
 /**
  * Logs form submission events with structured data for monitoring and debugging
  * Enhanced with additional metadata for better debugging and monitoring
  */
-function logFormEvent(level: 'info' | 'warn' | 'error', message: string, data: Record<string, any>) {
-  const logEntry = {
+function logFormEvent(level: 'info' | 'warn' | 'error', message: string, data: LogData) {
+  const logEntry: LogEntry = {
     timestamp: new Date().toISOString(),
     level,
     message,
@@ -29,7 +42,7 @@ function logFormEvent(level: 'info' | 'warn' | 'error', message: string, data: R
 
   // Add request context if available
   if (typeof window === 'undefined') {
-    (logEntry as any).serverSide = true
+    logEntry.serverSide = true
   }
 
   switch (level) {
@@ -51,10 +64,19 @@ function logFormEvent(level: 'info' | 'warn' | 'error', message: string, data: R
   }
 }
 
+// Type for extracted form data
+interface ExtractedFormData {
+  name: string
+  email: string
+  message: string
+  reasons: string[]
+  website: string
+}
+
 /**
  * Extracts and validates form data from FormData object
  */
-function extractFormData(formData: FormData): Record<string, any> {
+function extractFormData(formData: FormData): ExtractedFormData {
   return {
     name: formData.get("name") as string,
     email: formData.get("email") as string,

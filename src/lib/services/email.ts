@@ -18,10 +18,13 @@ const EMAIL_CONFIG = {
   ownerEmail: process.env.RESEND_TO_CONTACT_EMAIL || '',
 } as const;
 
+// Type for email log data - allow any serializable value
+type EmailLogData = Record<string, unknown>
+
 /**
  * Enhanced logging function for email service operations
  */
-function logEmailEvent(level: 'info' | 'warn' | 'error', message: string, data: Record<string, any>) {
+function logEmailEvent(level: 'info' | 'warn' | 'error', message: string, data: EmailLogData) {
   const logEntry = {
     timestamp: new Date().toISOString(),
     level,
