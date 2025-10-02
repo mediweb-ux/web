@@ -4,7 +4,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import GoogleAnalytics from '@/components/GoogleAnalytics';
-import CookieBanner from '@/components/CookieBanner';
+import CookieBanner from '@/components/cookiebanner';
+import { Suspense } from 'react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="no">
-      <GoogleAnalytics GA_MEASUREMENT_ID='G-KL3W8PNX4X' />
+      <Suspense fallback={null}>
+        <GoogleAnalytics GA_MEASUREMENT_ID='G-KL3W8PNX4X' />
+      </Suspense>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         <main className="container mx-auto px-4 sm:px-6 lg:px-8">

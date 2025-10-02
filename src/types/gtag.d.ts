@@ -8,10 +8,10 @@ declare global {
       config?: {
         page_path?: string;
         analytics_storage?: 'granted' | 'denied';
-        [key: string]: any;
+        [key: string]: unknown;
       }
     ) => void;
-    dataLayer: any[];
+    dataLayer: unknown[];
   }
 }
 

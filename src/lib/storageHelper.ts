@@ -2,7 +2,7 @@
 
 import "client-only";
 
-export function getLocalStorage(key: string, defaultValue: any) {
+export function getLocalStorage(key: string, defaultValue: unknown) {
     try {
         if (typeof window === 'undefined') {
             return defaultValue;
@@ -19,7 +19,7 @@ export function getLocalStorage(key: string, defaultValue: any) {
     }
 }
 
-export function setLocalStorage(key: string, value: any) {
+export function setLocalStorage(key: string, value: unknown) {
     try {
         if (typeof window === 'undefined') {
             return;
