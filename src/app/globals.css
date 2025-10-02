@@ -120,14 +120,14 @@
   --card-foreground: oklch(0.32 0 0); /* #4b5563 */
   --popover: oklch(1 0 0); /* #ffffff */
   --popover-foreground: oklch(0.35 0 0); /* #475569 */
-  --primary: oklch(0.45 0.15 160); /* #059669 emerald-600 */
-  --primary-foreground: oklch(1 0 0); /* #ffffff */
+  --primary: oklch(0.35 0.15 160); /* #047857 emerald-700 - darker for better contrast */
+  --primary-foreground: oklch(1 0 0); /* #ffffff - white text on green */
   --secondary: oklch(0.97 0 0); /* #f1f5f9 */
   --secondary-foreground: oklch(0.32 0 0); /* #4b5563 */
-  --muted: oklch(0.97 0 0); /* #f1f5f9 */
-  --muted-foreground: oklch(0.45 0 0); /* #6b7280 */
-  --accent: oklch(0.55 0.15 160); /* #10b981 emerald-500 */
-  --accent-foreground: oklch(1 0 0); /* #ffffff */
+  --muted: oklch(0.94 0 0); /* #f1f5f9 - light gray for hover background */
+  --muted-foreground: oklch(0.25 0 0); /* #404040 - dark gray text (AA compliant) */
+  --accent: oklch(0.35 0.15 160); /* #047857 emerald-700 */
+  --accent-foreground: oklch(1 0 0); /* #ffffff - white text on green background */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.9 0 0); /* #e5e7eb */
@@ -231,5 +231,24 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Ensure proper text color on green backgrounds for accessibility */
+  /* Only apply to buttons and form elements, not dropdown content */
+  button.bg-primary,
+  button.bg-accent,
+  .btn-primary,
+  .btn-secondary,
+  button:hover.bg-primary,
+  button:hover.bg-accent,
+  input[type="submit"].bg-primary,
+  input[type="submit"].bg-accent {
+    color: white !important;
+  }
+  
+  /* Dropdown menu items should have dark text on light hover background */
+  [data-slot="navigation-menu-content"] a:hover {
+    background-color: #f8fafc !important;
+    color: #374151 !important;
   }
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { Book, Earth, Group, Menu, Stethoscope, User } from "lucide-react";
 
 import {
