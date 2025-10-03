@@ -24,8 +24,8 @@ export default function Brukervilkar() {
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Introduksjon</h2>
-                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Disse vilkårene gjelder for alle tjenestene levert av Tr&oslash;nnes MediWeb Solutions («MediWeb Solutions», &ldquo;MediWeb&rdquo;, «vi», «vår») og på nettsiden www.mediweb.no.
-                    Ved å akseptere disse vilkårene, inngår du en avtale med Tr&oslash;nnes MediWeb Solutions, org.nr. xxxx, Lektor Musums gate 17, 7650 Verdal, og aksepterer samtidig vår behandling av personopplysninger som beskrevet i <Link href="/personvern" className="hover:underline text-blue-800">personvernerklæringen</Link>.</p>
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Disse vilkårene gjelder for alle tjenestene levert av Tr&oslash;nnes MediWeb Solutions («MediWeb Solutions», &ldquo;MediWeb&rdquo;, &ldquo;vi&rdquo;, &ldquo;vår&rdquo;) og på nettsiden www.mediweb.no.
+                    Ved å akseptere disse vilkårene, inngår du en avtale med Tr&oslash;nnes MediWeb Solutions, org.nr. 924803673, Lektor Musums gate 17, 7650 Verdal, og aksepterer samtidig vår behandling av personopplysninger som beskrevet i <Link href="/personvern" className="hover:underline text-blue-800">personvernerklæringen</Link>.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Disse vilkårene og betingelsene (&ldquo;Avtale&rdquo;) angir de generelle vilkårene for din bruk av mediweb.no (&ldquo;Nettstedet&rdquo; eller &ldquo;Tjenesten&rdquo;) og alle dets relaterte produkter og tjenester (samlet &ldquo;Tjenester&rdquo;). 
                     Denne avtalen er juridisk bindende mellom deg (&ldquo;Bruker&rdquo;, &ldquo;deg&rdquo; eller &ldquo;din&rdquo;) og MediWeb Solutions (&ldquo;mediweb.no&rdquo;, &ldquo;vi&rdquo;, &ldquo;oss&rdquo; eller &ldquo;vår&rdquo;). 
                     Ved å få tilgang til å bruke nettstedet og tjenestene, erkjenner du at du har lest, forstått og godtar å være bundet av vilkårene i denne avtalen.</p>
@@ -59,7 +59,7 @@ export default function Brukervilkar() {
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Immatrielle rettigheter</h2>
-                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">"Intellektuell eiendomsrett" (immaterialrett) betyr alle nåværende og fremtidige rettigheter gitt ved lov eller i forbindelse med opphavsrett og relaterte rettigheter.</p>
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">&quot;Intellektuell eiendomsrett&quot; (immaterialrett) betyr alle nåværende og fremtidige rettigheter gitt ved lov eller i forbindelse med opphavsrett og relaterte rettigheter.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Denne avtalen overfører ikke intellektuell eiendom som eies av mediweb.no eller tredjeparter til deg, og alle rettigheter og interesser i og til slik eiendom vil forbli (som mellom partene) utelukkende hos MediWeb. 
                     Alle varemerker, servicemerker, grafikk og logoer som brukes i forbindelse med nettstedet og tjenestene, er &aring;ndsverk av MediWeb Solutions. 
                     Din bruk av nettstedet og tjenestene gir deg ingen rett eller lisens til å reprodusere eller på annen måte bruke MediWeb's eller tredjeparts varemerker.</p>    
