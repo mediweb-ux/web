@@ -62,7 +62,7 @@ export default function Brukervilkar() {
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">&quot;Intellektuell eiendomsrett&quot; (immaterialrett) betyr alle nåværende og fremtidige rettigheter gitt ved lov eller i forbindelse med opphavsrett og relaterte rettigheter.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Denne avtalen overfører ikke intellektuell eiendom som eies av mediweb.no eller tredjeparter til deg, og alle rettigheter og interesser i og til slik eiendom vil forbli (som mellom partene) utelukkende hos MediWeb. 
                     Alle varemerker, servicemerker, grafikk og logoer som brukes i forbindelse med nettstedet og tjenestene, er &aring;ndsverk av MediWeb Solutions. 
-                    Din bruk av nettstedet og tjenestene gir deg ingen rett eller lisens til å reprodusere eller på annen måte bruke MediWeb's eller tredjeparts varemerker.</p>    
+                    Din bruk av nettstedet og tjenestene gir deg ingen rett eller lisens til å reprodusere eller på annen måte bruke MediWeb&apos;s eller tredjeparts varemerker.</p>    
             </div>
 
              <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
