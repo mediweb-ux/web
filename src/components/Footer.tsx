@@ -1,4 +1,5 @@
 import { Logo, LogoImage, LogoText } from "@/components/logo";
+import Link from "next/link";
 
 interface MenuItem {
   title: string;
@@ -75,8 +76,9 @@ const Footer = ({
                   <LogoImage
                     src={logo.src}
                     alt={logo.alt}
-                    title={logo.title}
                     className="h-10"
+                    width={40}
+                    height={40}
                   />
                   <LogoText className="text-2xl">{logo.title}</LogoText>
                 </Logo>
@@ -91,7 +93,7 @@ const Footer = ({
                     <li key={linkIdx}
                       className="hover:text-primary font-medium"
                     >
-                      <a href={link.url}>{link.text}</a>
+                      <Link href={link.url}>{link.text}</Link>
                     </li>
                   ))}
                 </ul>
@@ -103,7 +105,7 @@ const Footer = ({
             <ul className="flex gap-4">
               {bottomLinks.map((link, linkIdx) => (
                 <li key={linkIdx} className="hover:text-primary underline">
-                  <a href={link.url}>{link.text}</a>
+                  <Link href={link.url}>{link.text}</Link>
                 </li>
               ))}
             </ul>
