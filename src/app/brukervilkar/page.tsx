@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Brukervilkar() {
@@ -5,7 +6,12 @@ export default function Brukervilkar() {
     <>
         <section id="brukervilkar-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/20">
-                <img src="/bg-brukervilkar.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-brukervilkar.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Brukervilk&aring;r

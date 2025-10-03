@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -5,7 +6,12 @@ export default function NotFound() {
     <>
         <section id="not-found-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/20">
-                <img src="/hero-bg-light.png" className="absolute w-full h-full object-cover mix-blend-overlay" alt="" />
+                <Image 
+                    src="/hero-bg-light.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         404 - Siden ikke funnet
@@ -18,7 +24,7 @@ export default function NotFound() {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">
-                        Beklager, vi fant ikke siden du leter etter
+                        Beklager, vi fant ikke siden du leter etter!
                     </h2>
                     <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">
                         Siden du prøvde å besøke eksisterer ikke eller har blitt flyttet. 

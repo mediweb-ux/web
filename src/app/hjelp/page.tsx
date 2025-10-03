@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 export default function Hjelp() {
   return (
     <>
         <section id="hjelp-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/8">
-                <img src="/bg-hjelp.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-hjelp.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Hjelp / FAQ
