@@ -1,6 +1,4 @@
 import ContactForm from "@/components/contact-form";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Kontakt() {
   return (
