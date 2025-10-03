@@ -6,7 +6,12 @@ export default function Kursvirksomhet() {
     <>
         <section id="kursvirksomhet-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/20">
-                <img src="/bg-kursvirksomhet.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-kursvirksomhet.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Kursvirksomhet

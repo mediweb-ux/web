@@ -6,7 +6,12 @@ export default function Webutvikling() {
     <>
         <section id="webutvikling-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/15">
-                <img src="/bg-webdevelopment.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-webutviklin.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Webutvikling
@@ -68,7 +73,7 @@ export default function Webutvikling() {
 
                 <Image 
                     src="/wireframe-layout.jpg" 
-                    alt="Illustrasjon: Tegning av wireframe layout"
+                    alt="Illustrasjon: Tegning av en wireframe-layout"
                     width={550}
                     height={350} 
                     className="my-12 rounded-md shadow-md mx-auto" />

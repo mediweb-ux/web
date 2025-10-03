@@ -9,6 +9,8 @@ import {
   ContextMenuItem,
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
+import Link from "next/link";
+import Image from "next/image";
 
 interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   url: string;
@@ -16,10 +18,12 @@ interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
 }
 
-interface LogoImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+interface LogoImageProps {
   src: string;
   alt: string;
   className?: string;
+  width?: number;
+  height?: number;
 }
 
 interface LogoTextProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -84,26 +88,45 @@ const LogoBrandDownload = ({
 
 const Logo = ({ url, className, children, ...props }: LogoProps) => {
   return (
-    <a
+    <Link
       href={url}
       className={cn("flex max-h-8 items-center gap-2", className)}
       {...props}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
-const LogoImage = ({ src, alt, className, ...props }: LogoImageProps) => (
-  <img src={src} alt={alt} className={cn("block h-8", className)} {...props} />
+const LogoImage = ({ 
+  src, 
+  alt, 
+  className, 
+  width = 32, 
+  height = 32 
+}: LogoImageProps) => (
+  <Image 
+    src={src} 
+    alt={alt} 
+    width={width}
+    height={height}
+    className={cn("block h-8", className)} 
+  />
 );
 
-const LogoImageMobile = ({ src, alt, className, ...props }: LogoImageProps) => (
-  <img
+const LogoImageMobile = ({ 
+  src, 
+  alt, 
+  className, 
+  width = 32, 
+  height = 32 
+}: LogoImageProps) => (
+  <Image
     src={src}
     alt={alt}
+    width={width}
+    height={height}
     className={cn("flex h-8 md:hidden", className)}
-    {...props}
   />
 );
 
@@ -111,13 +134,15 @@ const LogoImageDesktop = ({
   src,
   alt,
   className,
-  ...props
+  width = 32,
+  height = 32,
 }: LogoImageProps) => (
-  <img
+  <Image
     src={src}
     alt={alt}
+    width={width}
+    height={height}
     className={cn("hidden h-8 md:flex", className)}
-    {...props}
   />
 );
 
