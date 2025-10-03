@@ -44,7 +44,7 @@ export default function Brukervilkar() {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Lenker til andre ressurser</h2>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Nettstedet og tjenestene kan linke til andre ressurser (for eksempel nettsteder, mobilapplikasjoner osv.), men det innebærer ikke at vi har noen assosiasjon, tilknytning, sponsoravtale eller affiliate-avtale med en nevnt ressurs, med mindre det er spesifikt angitt. 
-                    I de tilfellene der mediweb.no benytter annonselenker og annonsebannere til eksterne samarbeidspartnere, vil dette merkes med “Annonse”.</p>
+                    I de tilfellene der mediweb.no benytter annonselenker og annonsebannere til eksterne samarbeidspartnere, vil dette merkes med &quot;Annonse&quot;.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Vi er ikke ansvarlige for å undersøke,  evaluere eller garantere innholdet i eksterne ressurser. 
                 Vi påtar oss ikke noe ansvar for handlinger, produkter, tjenester og innhold fra andre tredjeparter. 
                 Du bør gjennomgå de juridiske uttalelsene og andre vilkår for bruk av ressurser du får tilgang til via en lenke på nettstedet og tjenestene. 
