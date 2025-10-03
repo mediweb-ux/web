@@ -178,10 +178,12 @@ const Navbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <img
+                      <Image
                         src={logo.src}
                         className="max-h-8 dark:invert"
                         alt={logo.alt}
+                        width={32}
+                        height={32}
                       />
                     </a>
                   </SheetTitle>
@@ -197,10 +199,10 @@ const Navbar = ({
 
                   <div className="flex flex-col gap-3">
                     <Button asChild variant="outline">
-                      <a href={auth.login.url}>{auth.login.title}</a>
+                      <Link href={auth.login.url}>{auth.login.title}</a>
                     </Button>
                     <Button asChild>
-                      <a href={auth.signup.url}>{auth.signup.title}</a>
+                      <Link href={auth.signup.url}>{auth.signup.title}</a>
                     </Button>
                   </div>
                 </div>
