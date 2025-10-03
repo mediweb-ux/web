@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Priser() {
@@ -5,7 +6,12 @@ export default function Priser() {
     <>
         <section id="priser-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/8">
-                <img src="/bg-omoss.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-priser.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Priser

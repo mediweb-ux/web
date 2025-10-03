@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 export default function OmOss() {
   return (
     <>
         <section id="omoss-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/8">
-                <img src="/bg-omoss.png" className="absolute w-full h-full object-cover mix-blend-overlay" />
+                <Image 
+                    src="/bg-omoss.png" 
+                    alt="" 
+                    fill
+                    className="absolute w-full h-full object-cover mix-blend-overlay" 
+                />
                 <div className="py-44">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-center">
                         Om oss
