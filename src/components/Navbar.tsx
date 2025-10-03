@@ -57,7 +57,7 @@ const Navbar = ({
   logo = {
     url: "/",
     src: "/MediWeb_logo_crop.png",
-    alt: "logo",
+    alt: "MediWeb logo",
     title: "MediWeb Solutions",
   },
   menu = [
@@ -125,7 +125,7 @@ const Navbar = ({
   },
 }: NavbarProps) => {
   return (
-    <section className="py-4">
+    <section className="py-4" aria-label="Navigation bar">
       <div className="container mx-auto px-8">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
@@ -135,7 +135,7 @@ const Navbar = ({
               <img
                 src={logo.src}
                 className="max-h-8 dark:invert"
-                alt={logo.alt}
+                alt=""
               />
               <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}

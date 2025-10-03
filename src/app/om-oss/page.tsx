@@ -25,10 +25,10 @@ export default function OmOss() {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Den spede begynnelsen</h2>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Som for mange andre, startet reisen p&aring; gutterommet til grunnlegger H&aring;kon Tr&oslash;nnes. 
-                    Som 12-&aring;ring begynte han med programmering i BASIC, og laget sitt f&oslash;rste spill (til eget bruk) et par &aring;r senere.</p>
-                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Etter som &aring;rene gikk, ble programmeringsspr&aring;k ogs&aring; utvidet. B&aring;de PHP og C# har v&aelig;rt mye i bruk i diverse prosjekter. 
+                    Rundt 12-&aring;rsalder begynte han med enkel programmering i BASIC, og laget sitt f&oslash;rste spill (til eget bruk) et par &aring;r senere.</p>
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Etter som &aring;rene gikk, ble mengden programmeringsspr&aring;k ogs&aring; utvidet. B&aring;de PHP og Visual C# har v&aelig;rt mye i bruk i diverse prosjekter. 
                     Og samtidig oppsto behovet for &aring; l&aelig;re SQL for &aring; h&aring;ndtere database p&aring; backend.
-                    Det var uten tvil en &aelig;rerik tid, ikke var det tusenvis av YouTube-videoer tilgjengelig, s&aring; det ble mye pr&oslahs;ving og feiling!</p>
+                    Det var uten tvil en l&aelig;rerik tid &mdash; ikke var det tusenvis av YouTube-videoer tilgjengelig, s&aring; det ble mye pr&oslash;ving og feiling!</p>
             </div>
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -37,12 +37,12 @@ export default function OmOss() {
                 Det varte noen &aring;r og f&oslash;rte til litt eksra inntekt under studiene, men etterhvert s&aring; ble det for mye jobb ved siden av studier og etterhvert begynnelsen p&aring; et travlere legeliv. 
                 H&aring;kon valgte derfor &aring; stenge HiTIT til slutt.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Noen tid senere ble det oppstart av <em className="italic">Kontorportalen</em> for den delen som handlet om webutvikling og delvis kursvirksomhet,
-                    mens den medisinske delen levde i firmaet <em className="italic">Anestesi1</em>. Men begge var enkeltpersonforetak (ENK), og H&aring;kon fant ut at det ble for komplisert med tanke p&aring; &oslash;konomiske forhold med to ENK.</p>
+                    mens den medisinske delen levde i firmaet som het <em className="italic">Anestesi1</em>. Men begge var enkeltpersonforetak (ENK), og H&aring;kon fant etterhvert ut at det ble for komplisert med tanke p&aring; det &oslash;konomiske n&aring;r man m&aring; h&aring;ndtere to ENK.</p>
             </div>
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">MediWeb</h2>
-                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Derfor dukket ideen opp om &aring; sl&aring; sammen alt som tidligere var gjort gjennom to ulike firma til ett firma!</p>
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Da dukket ideen opp om &aring; sl&aring; sammen disse to firmaene, slik at alt som tidligere var gjort gjennom to ulike firma, n&aring; ble til ett firma!</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Ja, det f&oslash;ltes litt rart og underlig, for det er en uvanlig kombinasjon. Men jo mer man tenkte p&aring; det, jo lettere var det &aring; se det i kombinasjon.
                     S&aring; her er vi i dag, med den utrolige kombinasjonen av tjenester i ett og samme firma - MediWeb Solutions! Vi gleder oss til &aring; samarbeide med deg p&aring; alle v&aring;re omr&aring;der!
                 </p>

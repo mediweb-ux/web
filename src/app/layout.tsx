@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="no">
       <Suspense fallback={null}>
-        <GoogleAnalytics GA_MEASUREMENT_ID='G-KL3W8PNX4X' />
+        <GoogleAnalytics GA_MEASUREMENT_ID={`${process.env.GA_MEASUREMENT_ID}`} />
       </Suspense>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
