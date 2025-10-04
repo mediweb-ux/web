@@ -24,14 +24,15 @@ export default function Priser() {
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Webutvikling</h2>
-                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Priser for oppdrag innen webutvikling varierer naturlig nok med kompleksiteten av oppdraget. Fram til du har f&aring;tt en pris, 
-                    s&aring; er v&aring;re tjenester kostnadsfrie bortsett fra evt reise/opphold som er n&oslash;dvendig. Vi fastsetter pris basert p&aring; timeanslag.</p>
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Priser for oppdrag innen webutvikling varierer naturlig nok med kompleksiteten av oppdraget. Vi &oslash;nsker &aring; finne ut mer om dette f&oslash;r vi gir deg en pris.
+                    Fram til vi har f&aring;tt det p&aring; det rene og gitt deg en pris, s&aring; er v&aring;re tjenester kostnadsfrie (bortsett fra evt reise/opphold som er n&oslash;dvendig). 
+                    Vi fastsetter deretter pris basert p&aring; timeanslag for oppdraget.</p>
             </div>
 
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Legetjenester</h2>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">P&aring; samme m&aring;te som for webutvikling, s&aring; avhenger pris p&aring; v&aring;re legetjenester av
-                    varighet p&aring; oppdraget. Vi tilbyr ofte timepris + reise/opphold for kortere oppdrag, og fastpris for lengre oppdrag eller med flere teammedlemmer.
+                    varighet p&aring; oppdraget og hvor mange personer som trengs. Vi tilbyr ofte timepris + reise/opphold for kortere oppdrag, og fastpris for lengre oppdrag eller med flere teammedlemmer.
                 </p>
             </div>
 

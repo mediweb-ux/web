@@ -7,7 +7,7 @@ export default function Webutvikling() {
         <section id="webutvikling-heading" aria-label="Heading">
             <div className="relative w-full h-full bg-black/15">
                 <Image 
-                    src="/bg-webutvikling.png" 
+                    src="/bg-webdevelopment.png" 
                     alt="" 
                     fill
                     className="absolute w-full h-full object-cover mix-blend-overlay" 
