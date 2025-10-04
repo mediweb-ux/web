@@ -37,6 +37,9 @@ RUN pnpm build
 FROM base AS runner
 WORKDIR /app
 
+# Install curl for health check
+RUN apk add --no-cache curl
+
 ENV NODE_ENV=production
 # Uncomment the following line in case you want to disable telemetry during runtime.
 # ENV NEXT_TELEMETRY_DISABLED=1
@@ -62,6 +65,10 @@ EXPOSE 3000
 ENV PORT=3000
 # set hostname to localhost
 ENV HOSTNAME="0.0.0.0"
+
+# Add health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:3000/api/health || exit 1
 
 # Use npm start instead of standalone server
 CMD ["npm", "start"]
