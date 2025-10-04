@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server'
 
+// Configure this route to use Edge Runtime for Cloudflare Pages compatibility
+export const runtime = 'edge';
+
 export async function GET() {
   try {
     // Basic health check - you can add more sophisticated checks here
