@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   
   // Fix workspace root warning
   outputFileTracingRoot: __dirname,
+  
+  // Optimize images for Cloudflare
+  images: {
+    unoptimized: true
+  },
 };
 
 export default nextConfig;

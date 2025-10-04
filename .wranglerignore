@@ -1,0 +1,32 @@
+# Ignore cache files and large build artifacts
+cache/
+.next/cache/
+.next/standalone/
+.next/static/chunks/*.js.map
+.next/server/chunks/*.js.map
+
+# Ignore development files
+node_modules/
+.env*
+.git/
+.gitignore
+README.md
+*.log
+
+# Ignore source files (not needed for deployment)
+src/
+public/
+components/
+app/
+lib/
+styles/
+
+# Ignore config files
+next.config.ts
+tailwind.config.ts
+tsconfig.json
+package.json
+pnpm-lock.yaml
+
+# Ignore large webpack files
+.next/cache/webpack/
