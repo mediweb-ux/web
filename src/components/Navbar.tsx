@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Book, Earth, Group, Menu, Stethoscope, User } from "lucide-react";
 
 import {
@@ -70,7 +71,7 @@ const Navbar = ({
       items: [
         {
           title: "Webutviking",
-          description: "Opplev det siste innen webteknologi",
+          description: "Vi utvikler det siste innen webteknologi",
           icon: <Earth className="size-5 shrink-0" />,
           url: "/tjenester/webutvikling",
         },
@@ -94,13 +95,15 @@ const Navbar = ({
       items: [
         {
           title: "Kontakt oss",
-          description: "Vi er tilgjengelige på e-post og svarer deg så raskt vi kan",
+          description:
+            "Vi er tilgjengelige på e-post og svarer deg så raskt vi kan",
           icon: <Group className="size-5 shrink-0" />,
           url: "/kontakt",
         },
         {
           title: "Personvern",
-          description: "Vi tar personvern alvorlig, les vår personvernerklæring",
+          description:
+            "Vi tar personvern alvorlig, les vår personvernerklæring",
           icon: <User className="size-5 shrink-0" />,
           url: "/personvern",
         },
@@ -126,6 +129,12 @@ const Navbar = ({
     signup: { title: "Sign up", url: "#" },
   },
 }: NavbarProps) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <section className="py-4" aria-label="Navigation bar">
       <div className="container mx-auto px-8">
@@ -168,7 +177,7 @@ const Navbar = ({
                 alt={logo.alt}
               />
             </a>
-            <Sheet>
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Menu className="size-4" />
@@ -177,7 +186,11 @@ const Navbar = ({
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
+                    <a
+                      href={logo.url}
+                      className="flex items-center gap-2"
+                      onClick={closeMobileMenu}
+                    >
                       <Image
                         src={logo.src}
                         className="max-h-8 dark:invert"
@@ -194,15 +207,21 @@ const Navbar = ({
                     collapsible
                     className="flex w-full flex-col gap-4"
                   >
-                    {menu.map((item) => renderMobileMenuItem(item))}
+                    {menu.map((item) =>
+                      renderMobileMenuItem(item, closeMobileMenu)
+                    )}
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
                     <Button asChild variant="outline">
-                      <Link href={auth.login.url}>{auth.login.title}</Link>
+                      <Link href={auth.login.url} onClick={closeMobileMenu}>
+                        {auth.login.title}
+                      </Link>
                     </Button>
                     <Button asChild>
-                      <Link href={auth.signup.url}>{auth.signup.title}</Link>
+                      <Link href={auth.signup.url} onClick={closeMobileMenu}>
+                        {auth.signup.title}
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -243,7 +262,7 @@ const renderMenuItem = (item: MenuItem) => {
   );
 };
 
-const renderMobileMenuItem = (item: MenuItem) => {
+const renderMobileMenuItem = (item: MenuItem, closeMobileMenu: () => void) => {
   if (item.items) {
     return (
       <AccordionItem key={item.title} value={item.title} className="border-b-0">
@@ -252,7 +271,11 @@ const renderMobileMenuItem = (item: MenuItem) => {
         </AccordionTrigger>
         <AccordionContent className="mt-2">
           {item.items.map((subItem) => (
-            <SubMenuLink key={subItem.title} item={subItem} />
+            <SubMenuLink
+              key={subItem.title}
+              item={subItem}
+              onClose={closeMobileMenu}
+            />
           ))}
         </AccordionContent>
       </AccordionItem>
@@ -260,17 +283,29 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <Link key={item.title} href={item.url} className="text-md font-semibold">
+    <Link
+      key={item.title}
+      href={item.url}
+      className="text-md font-semibold"
+      onClick={closeMobileMenu}
+    >
       {item.title}
     </Link>
   );
 };
 
-const SubMenuLink = ({ item }: { item: MenuItem }) => {
+const SubMenuLink = ({
+  item,
+  onClose,
+}: {
+  item: MenuItem;
+  onClose?: () => void;
+}) => {
   return (
     <Link
       className="hover:bg-muted hover:text-accent-foreground flex min-w-80 select-none flex-row gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
       href={item.url}
+      onClick={onClose}
     >
       <div className="text-foreground">{item.icon}</div>
       <div>

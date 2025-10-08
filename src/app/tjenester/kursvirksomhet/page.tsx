@@ -5,7 +5,7 @@ export default function Kursvirksomhet() {
   return (
     <>
         <section id="kursvirksomhet-heading" aria-label="Heading">
-            <div className="relative w-full h-full bg-black/20">
+            <div className="relative w-full h-full bg-black/8">
                 <Image 
                     src="/bg-kursvirksomhet.png" 
                     alt="" 
@@ -20,9 +20,9 @@ export default function Kursvirksomhet() {
             </div>
         </section>
         
-        <section className="py-20 z-5 bg-green-50" id="forstehjelp" aria-label="Førstehjelp">
+        <section className="py-20 px-4 z-5 bg-green-50" id="forstehjelp" aria-label="Førstehjelp">
             <div>
-                <p className="mt-8 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Vi har lang erfaring med kursvirksomhet av ulik slag. H&aring;kon Tr&oslash;nnes, som startet MediWeb Solutions, har drevet undervisning for R&oslash;de Kors og internt p&aring; sykehuset, og han
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Vi har lang erfaring med kursvirksomhet av ulik slag. H&aring;kon Tr&oslash;nnes, som startet MediWeb Solutions, har drevet undervisning for R&oslash;de Kors og internt p&aring; sykehuset, og han
                     har mange &aring;rs erfaring som instrukt&oslash;r/fasilitator ved medisinsk simulering.</p> 
                 <p className="mt-8 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Han har gjennomg&aring;tt sertifisering som Certified Healthcare Simulation Educator (CHSE) og som anestesilege har han blant annet v&aelig;rt delaktig i oppl&aelig;ring i avansert hjerte-lunge-redning (AHLR) for helsepersonell.
                     Vi &oslash;nsker n&aring; &aring; bringe denne erfaringen ut til dere!

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OmOss() {
   return (
@@ -30,7 +31,7 @@ export default function OmOss() {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <h2 className="max-w-4xl mt-8 mb-4 text-lg md:text-xl text-gray-900 lg:mx-auto font-semibold">Den spede begynnelsen</h2>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Som for mange andre, startet reisen p&aring; gutterommet til grunnlegger H&aring;kon Tr&oslash;nnes. 
-                    Rundt 12-&aring;rsalder begynte han med enkel programmering i BASIC, og laget sitt f&oslash;rste spill (til eget bruk) et par &aring;r senere.</p>
+                    Rundt 12-&aring;rsalder begynte han med enkel programmering i <Link href="https://no.wikipedia.org/wiki/BASIC" target="_blank" className="hover:underline text-blue-800">BASIC</Link>, og laget sitt f&oslash;rste spill (til eget bruk) et par &aring;r senere.</p>
                 <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Etter som &aring;rene gikk, ble mengden programmeringsspr&aring;k ogs&aring; utvidet. B&aring;de PHP og Visual C# har v&aelig;rt mye i bruk i diverse prosjekter. 
                     Og samtidig oppsto behovet for &aring; l&aelig;re SQL for &aring; h&aring;ndtere database p&aring; backend.
                     Det var uten tvil en l&aelig;rerik tid &mdash; ikke var det tusenvis av YouTube-videoer tilgjengelig, s&aring; det ble mye pr&oslash;ving og feiling!</p>

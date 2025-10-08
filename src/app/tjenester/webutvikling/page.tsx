@@ -5,7 +5,7 @@ export default function Webutvikling() {
   return (
     <>
         <section id="webutvikling-heading" aria-label="Heading">
-            <div className="relative w-full h-full bg-black/15">
+            <div className="relative w-full h-full bg-black/8">
                 <Image 
                     src="/bg-webdevelopment.png" 
                     alt="" 
@@ -20,9 +20,9 @@ export default function Webutvikling() {
             </div>
         </section>
         
-        <section className="py-20 z-5 bg-green-50" id="steg1" aria-label="Steg 1">
+        <section className="py-20 px-4 z-5 bg-green-50" id="steg1" aria-label="Steg 1">
             <div>
-                <p className="mt-8 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Noe av det vi har gjort lengst, er utvikling av websider. 
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">Noe av det vi har gjort lengst, er utvikling av websider. 
                     Vi har holdt på med dette siden midten av 1990-tallet, s&aring; vi har fulgt utviklingen av webteknologier og -standarder i mange &aring;r. 
                     Vi har programmert nettsider ment for bruk i nettleseren <Link href="https://lynx.invisible-island.net/" target="_blank" className="hover:underline text-blue-800">Lynx</Link>,
                     vi har vært med på overgangen fra statiske HTML-sider til dynamiske sider og vi har vært med på å &quot;style&quot; nettsider ved &aring; bruke tabelloppsett, før CSS ble en ting. 
@@ -48,7 +48,7 @@ export default function Webutvikling() {
             </div>
             <Image 
             src="/boy-looks-at-information-on-the-plate.jpg" 
-            alt="Boy looking at information on a board"
+            alt="Illustrasjon av en gutt som leser på en informasjonstavle"
             width={550}
             height={350} 
             className="my-12 rounded-md shadow-md mx-auto" />

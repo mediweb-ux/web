@@ -20,9 +20,9 @@ export default function Legetjenester() {
             </div>
         </section>
         
-        <section className="py-20 z-5 bg-green-50" id="steg1" aria-label="Steg 1">
+        <section className="py-20 px-4 z-5 bg-green-50" id="steg1" aria-label="Steg 1">
             <div>
-                <p className="mt-8 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">H&aring;kon Tr&oslash;nnes, som startet MediWeb Solutions, er utdannet anestesilege - og det er derfor vi kan tilby den litt unike
+                <p className="mt-4 max-w-4xl my-4 text-lg md:text-xl text-gray-600 lg:mx-auto">H&aring;kon Tr&oslash;nnes, som startet MediWeb Solutions, er utdannet anestesilege - og det er derfor vi kan tilby den litt unike
                     kombinasjonen av tjenester som vi gj&oslash;r. I tillegg til &aring; kunne stille med anestesilege, kan vi ogs&aring; tilby anestesisykepleier(e) eller intensivsykepleier etter behov.
                     Med over 20 &aring;rs erfaring som anestesilege fra det offentlige og det private, kan vi tilby &quot;det meste&quot; av legetjenester. Vi g&aring;r gjennom noen av dem her.
                 </p>
